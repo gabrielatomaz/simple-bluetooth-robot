@@ -25,13 +25,6 @@ void forward() {
     digitalWrite(motorLeftTwo, LOW);
 }
 
-void stopRobot() {
-    digitalWrite(motorRightOne, LOW);
-    digitalWrite(motorLeftOne, LOW);
-    digitalWrite(motorRightTwo, LOW);
-    digitalWrite(motorLeftTwo, LOW);
-}
-
 void backwards() {
     digitalWrite(motorRightOne, LOW);
     digitalWrite(motorLeftOne, LOW);
@@ -50,6 +43,13 @@ void left() {
     digitalWrite(motorRightOne, LOW);
     digitalWrite(motorLeftOne, HIGH);
     digitalWrite(motorRightTwo, HIGH);
+    digitalWrite(motorLeftTwo, LOW);
+}
+
+void stopRobot() {
+    digitalWrite(motorRightOne, LOW);
+    digitalWrite(motorLeftOne, LOW);
+    digitalWrite(motorRightTwo, LOW);
     digitalWrite(motorLeftTwo, LOW);
 }
 
